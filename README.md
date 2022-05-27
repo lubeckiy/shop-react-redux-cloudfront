@@ -33,6 +33,7 @@ __All tasks have been done.__
 ## __How to deploy__
 
 1. Clone repository. (git clone ...)
-2. Install dependencies. (npm i)
-3. Change Service and Bucket Name in serverless.yml
-4. Run command: __serverless client deploy__
+2. Change branch to __task-2-sls__ (git checkout task-2-sls)
+3. Install dependencies. (npm i)
+4. Change Service and Bucket Name in serverless.yml
+5. Run command: __serverless client deploy__
