@@ -24,6 +24,7 @@ Cloudfront link - https://d25pa8zi69fms2.cloudfront.net/
 ### __Task 2.2 Automated deployment using serverless-finch + serverless single-page-app plugins__
 
 S3 link - http://backet-for-fe-app-auto-2.s3-website-us-east-1.amazonaws.com/
+
 Cloudfront link - http://backet-for-fe-app-auto-2.s3-website-us-east-1.amazonaws.com/
 
 ## __Summary__
