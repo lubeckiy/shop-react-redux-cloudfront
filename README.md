@@ -1,45 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# __Task 2__
 
-## Available Scripts
+Task [description here](https://github.com/EPAM-JS-Competency-center/cloud-development-course-initial/blob/main/2_serving_spa/task.md)
 
-In the project directory, you can run:  
-You can use NPM instead of YARN (Up to you)  
+Task due date / deadline date - 2022-05-16 07:00 / 2022-05-30 01:59 (GMT+3)
 
-### `yarn start` OR `npm run start`
+SELF CHECK: __5 points__
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-----------
+## __Evaluation criteria__
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [x] **0** - Nothing has been done. __(Link to repository is not provided. Nothing to check.)__
+- [x] **3** - S3 bucket has been created and configured properly. The app has been uploaded to the bucket and is available though the Internet. Nothing else has been done. __(Link to S3 bucket/website is provided. There is no Pull Request in the YOUR OWN frontend repository.)__
+- [x] **4** - In addition to the previous work a CloudFront distribution is created and configured properly and the site is served now with CloudFront and is available through the Internet over CloudFront URL, not S3-website link (due to changes in bucket’s policy...). __(Link to CloudFront website is provided. S3-website shows 403 Access Denied error. There is no Pull Request in the YOUR OWN frontend repository.)__
+- [x] **5** - Serverless-finch and serverless-single-page-app plugins are added and configured. The app can be built and deployed by running npm script command. __(Link to CloudFront website is provided. PR with all changes is submitted in the YOUR OWN frontend repository and its link is provided for review.)__
+------------
+## __Report__
 
-### `yarn test` OR `npm run test`
+### __Task 2.1 Manual deployment__
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+S3 link - http://backet-for-fe-app.s3-website.eu-central-1.amazonaws.com/
 
-### `yarn build` OR `npm run build`
+Cloudfront link - https://d25pa8zi69fms2.cloudfront.net/
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### __Task 2.2 Automated deployment using serverless-finch + serverless single-page-app plugins__
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+S3 link - http://shop-aws-app-auto.s3-website.eu-central-1.amazonaws.com/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cloudfront link - https://djd7u8igle4e3.cloudfront.net/
 
-### `yarn eject` OR `npm run eject`
+## __Summary__
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+__All tasks have been done.__
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## __How to deploy__
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone repository. (git clone ...)
+2. Change branch to __task-2-sls__ (git checkout task-2-sls)
+3. Install dependencies. (npm i)
+4. Change Service and Bucket Name in serverless.yml
+5. Run command: __npm run cloudfront:build:deploy__
