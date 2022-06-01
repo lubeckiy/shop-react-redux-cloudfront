@@ -36,4 +36,4 @@ __All tasks have been done.__
 2. Change branch to __task-2-sls__ (git checkout task-2-sls)
 3. Install dependencies. (npm i)
 4. Change Service and Bucket Name in serverless.yml
-5. Run command: __serverless client deploy__
+5. Run command: __npm run cloudfront:build:deploy__
