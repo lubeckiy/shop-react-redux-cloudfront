@@ -19,6 +19,7 @@ SELF CHECK: __5 points__
 ### __Task 2.1 Manual deployment__
 
 S3 link - http://backet-for-fe-app.s3-website.eu-central-1.amazonaws.com/
+
 Cloudfront link - https://d25pa8zi69fms2.cloudfront.net/
 
 ### __Task 2.2 Automated deployment using serverless-finch + serverless single-page-app plugins__
