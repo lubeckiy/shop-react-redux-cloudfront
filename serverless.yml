@@ -1,10 +1,13 @@
-service: backet-for-fe-app-auto
+service: rs-aws-shop-app-autodeploy-sls
+
+frameworkVersion: '3'
 
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs14.x
+  region: eu-central-1
   # setup profile for AWS CLI.
-  # profile: node-aws
+  # profile: shopAdmin
 
 plugins:
   - serverless-finch
@@ -15,7 +18,7 @@ plugins:
 
 custom:
   client:
-    bucketName: backet-for-fe-app-auto-2
+    bucketName: shop-aws-app-auto
     distributionFolder: build
   s3BucketName: ${self:custom.client.bucketName}
 

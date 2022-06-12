@@ -46,7 +46,7 @@ export default function Header() {
     <AppBar position="relative">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          <Link className={classes.homeLink} to="/">AutoDeploy Task-2</Link>
+          <Link className={classes.homeLink} to="/">Task-3</Link>
         </Typography>
 
         {auth && (
